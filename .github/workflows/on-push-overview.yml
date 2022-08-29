@@ -1,0 +1,20 @@
+name: Github Actions overview
+on: [push]
+jobs:
+  first-job:
+    name: First Job 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet from first step
+        run: echo "Hello from First Step"
+      - name: Greet from second step
+        run: echo "Hello from Second Step"
+
+  second-job:
+    name: Second Job 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet from first step of second job
+        run: echo "Hello from First Step of second job"
+      - name: Greet from second step of second job
+        run: echo "Hello from Second Step of second job"
